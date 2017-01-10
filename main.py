@@ -74,7 +74,7 @@ def handle_message(_client, control_message):
     _client.publish(control_message.responseTopic, response_string, qos=1)
 
 
-def on_disconnect(_client, userdata):
+def on_disconnect(_client, userdata, rc):
     print "Disconnected to broker"
 
 
